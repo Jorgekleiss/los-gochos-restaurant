@@ -1,0 +1,36 @@
+body {
+    font-family: 'RobotoPlayfair Display', sans-serif;
+}
+
+#logo-image {
+    height: 50px;
+    width: 50px;
+}
+
+/* Nab Bar */
+nav {
+}
+
+/* Main Image */
+
+.welcome-container{
+    height: 100vh;
+
+    background: url("../images/Background\(image-from-rawpixel-id-447845\).jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+/* Deals / Features */
+
+/* Experiences */
+
+/* Gallery */
