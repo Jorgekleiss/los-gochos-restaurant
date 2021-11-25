@@ -1,5 +1,6 @@
 body {
     font-family: 'RobotoPlayfair Display', sans-serif;
+    background-color: blue;
 }
 
 #logo-image {
@@ -8,12 +9,28 @@ body {
 }
 
 /* Nab Bar */
-nav {
+
+.active{
+
+}
+
+.line-divider{
+    height: 30px;
+    width: 2px;
+    background-color: black;
+}
+
+.navbar li {
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 /* Main Image */
 
 .welcome-container{
+    width: fluid;
     height: 100vh;
 
     background: url("../images/Background\(image-from-rawpixel-id-447845\).jpeg") no-repeat center center fixed;
@@ -22,15 +39,54 @@ nav {
     -o-background-size: cover;
     background-size: cover;
     
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
 
     position: relative;
+
+    /* zooming efect */
+
+    /* animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
+@keyframes hero-zoom {
+    from{
+      transform: scale(1);
+    }
+    to{
+      transform: scale(1.1);
+    }
+  } */
+
+  
 /* Deals / Features */
 
 /* Experiences */
 
 /* Gallery */
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #006d77;
+  width: 180px;
+  justify-content: center;
+}
+
+.gallery:hover {
+  border: 1px solid #e29578;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.image-description {
+  background-color: #006d77;
+  color: #edfef9;
+  padding: 15px;
+  text-align: center;
+}
