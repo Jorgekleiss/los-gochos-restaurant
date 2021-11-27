@@ -11,75 +11,79 @@ html {
 }
 
 body {
-    font-family: 'RobotoPlayfair Display', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
     font-size: 1.6rem;
 }
 
 #logo-image {
-    height: 50px;
-    width: 50px;
+    height: 5rem;
+    width: 5rem;
 }
 
-/* Nab Bar */
+.title {
+  font-family: "Architects Daughter";
+  font-size: 250%;
+}
+
+
+/* Nav Bar */
 
 header{
   background-color: var(--color-2);
   background-size: 100vw;
-  /* position: fixed; */
+
+  /* HOW TO MAKE THE WHOLE HEADER ALWAYS AT THE TOP OF THE SCREEN???*/
 }
 
-.active{
-
+.active {
+background-color: var(--color-1);
+width: 6.5rem;
+height: 4.5rem;
+border-radius: 3px;
+font-weight: bold;
+/* WHY IS THIS NOT WORKING? */
+color: var(--color-3); 
 }
 
 .navbar li {
     float: left;
     list-style-type: none;
-    text-decoration: none;
     padding: 1rem;
+    position: relative;
+}
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
 }
 
 .navbar{
   float: right;
+  margin-top: -6rem;
 }
 
-.navbar>a:hover { 
-font-size: 120%;
+.navbar a:hover { 
+text-decoration: underline solid 2px;
 }
 
 /* Main Image */
-
-.welcome-container{
-    height: 100vh;
-
-    background: url("assets/images/background.jpeg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     
-    display: block;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-}
-/* 
-    zooming efect */
-
-    /* animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes hero-zoom {
-    from{
-      transform: scale(1);
-    }
-    to{
-      transform: scale(1.1);
-    } */
+  body, html {
+    height: 100%;
+  }
   
+  .welcome-container {
+    background-image: url("/assets/images/arepa-background.jpeg");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .welcome-container .title {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
 
   
 /* Deals / Features */
@@ -116,4 +120,27 @@ font-size: 120%;
   color: var(--color-3);
   padding: 1rem;
   text-align: center;
+}
+
+/* footer */
+
+footer{
+  align-items: flex-end;
+  background-color: var(--color-2);
+  height: 10rem;
+}
+
+.social-media {
+  align-items: center;
+}
+
+.social-media a {
+  display: inline;
+}
+
+.social-media i {
+  font-size: 160%;
+  margin: 1%;
+  padding: 5%;
+  color: #000;
 }
