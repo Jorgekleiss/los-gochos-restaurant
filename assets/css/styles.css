@@ -4,6 +4,8 @@
   --color-3: #edf6f9;
   --color-4: #ffddd2;
   --color-5: #e29578;
+  --style-1: "Playfair Display";
+  --style-2: "Architects Daughter";
 }
 
 html {
@@ -11,7 +13,7 @@ html {
 }
 
 body {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: var(--style-1), sans-serif;
     font-size: 1.6rem;
 }
 
@@ -21,49 +23,40 @@ body {
 }
 
 .title {
-  font-family: "Architects Daughter";
+  font-family: var(--style-2);
   font-size: 250%;
 }
 
 
 /* Nav Bar */
 
-header{
+.navbar {
   background-color: var(--color-2);
-  background-size: 100vw;
-
-  /* HOW TO MAKE THE WHOLE HEADER ALWAYS AT THE TOP OF THE SCREEN???*/
-}
-
-.active {
-background-color: var(--color-1);
-width: 6.5rem;
-height: 4.5rem;
-border-radius: 3px;
-font-weight: bold;
-/* WHY IS THIS NOT WORKING? */
-color: var(--color-3); 
-}
-
-.navbar li {
-    float: left;
-    list-style-type: none;
-    padding: 1rem;
-    position: relative;
+  overflow: hidden;
 }
 
 .navbar a {
-  color: #000;
-  text-decoration: none;
-}
-
-.navbar{
   float: right;
-  margin-top: -6rem;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+  font-size: 1.4rem;
 }
 
-.navbar a:hover { 
-text-decoration: underline solid 2px;
+.navbar a:hover {
+  background-color: var(--color-1);
+  color: var(--color-3);
+}
+
+.navbar a.active {
+  background-color: var(--color-4);
+  color: #000;
+}
+
+.navbar .icon {
+  display: none;
 }
 
 /* Main Image */
@@ -143,4 +136,29 @@ footer{
   margin: 1%;
   padding: 5%;
   color: #000;
+}
+
+/* Media Queries */
+
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
