@@ -28,19 +28,16 @@
 
         <!-- Nav Bar -->
 
-            <nav class="navbar"> 
-                <ul>
-                    <li class="active"><a href="/">Home</a></li>
-                    <li><div class="vr"></div></li>
-                    <li><a href="/" target="_blank">About</a></li>
-                    <li><div class="vr"></div></li>
-                    <li><a href="/">Menu</a></li>
-                    <li><div class="vr"></div></li>
-                    <li><a href="/" target="_blank">Contact</a></li>
-                    <li><div class="vr"></div></li>
-                    <li><a href="/" target="_blank">Club</a></li>
-                </ul>
-            </nav>
+            <div class="navbar" id="topnavbar">  
+                <a href="/" class="active">Home</a>
+                <a href="/" target="_blank">About</a>
+                <a href="/">Menu</a>
+                <a href="/" target="_blank">Contact</a>
+                <a href="/" target="_blank">Club</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </header>
 
 
@@ -133,6 +130,15 @@
             
         </Footer>
         
-        
+        <script>
+            function myFunction() {
+            var x = document.getElementById("topnavbar");
+            if (x.className === "navbar") {
+                 x.className += " responsive";
+            } else {
+                 x.className = "navbar";
+                 }
+            }
+        </script>
     </body>
 </html>
