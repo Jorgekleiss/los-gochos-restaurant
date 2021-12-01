@@ -15,6 +15,7 @@ html {
 body {
     font-family: var(--style-1), sans-serif;
     font-size: 1.6rem;
+    height:  100%;
 }
 
 #logo-image {
@@ -27,6 +28,13 @@ body {
   font-size: 250%;
 }
 
+/* NOT FINISHED
+#wrapper { 
+  min-height: 100%; 
+  height: auto !important; 
+  height: 100%; 
+  margin: 0 auto -10rem; 
+} */
 
 /* Nav Bar */
 
@@ -82,10 +90,34 @@ body {
     align-items: flex-end;
   }
 
-  
+/* Deals/ features and experiences container */
+
+.content-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
 /* Deals / Features */
 
+  #deals {
+  background-color: var(--color-5);
+  height: 20rem;
+  width: 45%;
+  margin: 1rem .5rem 1rem .5rem;
+  border-radius: 4px;
+  }
+
+
 /* Experiences */
+
+  #experiences {
+    background-color: var(--color-5);
+    height: 20rem;
+    width: 45%;
+    margin: 1rem .5rem 1rem .5rem;
+    border-radius: 4px;
+    }
 
 /* Gallery */
 
@@ -121,7 +153,7 @@ body {
 
 /* footer */
 
-footer{
+.footer-container{
   align-items: flex-end;
   background-color: var(--color-2);
   height: 10rem;
@@ -129,9 +161,6 @@ footer{
 
 .social-media {
   align-items: center;
-}
-
-.social-media a {
   display: inline;
 }
 
