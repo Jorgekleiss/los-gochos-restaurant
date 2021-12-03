@@ -1,11 +1,11 @@
 :root {
-  --color-1: #006d77;
-  --color-2: #83c5be;
-  --color-3: #edf6f9;
-  --color-4: #ffddd2;
-  --color-5: #e29578;
-  --style-1: "Playfair Display";
-  --style-2: "Architects Daughter";
+  --ming: #006d77;
+  --blue-green: #83c5be;
+  --alice-blue: #edf6f9;
+  --silk: #ffddd2;
+  --dark-salmon: #e29578;
+  --header-font: "Architects Daughter";
+  --body-font: "Playfair Display"; 
 }
 
 html {
@@ -13,9 +13,10 @@ html {
 }
 
 body {
-    font-family: var(--style-1), sans-serif;
+    font-family: var(--body-font), sans-serif;
     font-size: 1.6rem;
     height:  100%;
+    margin: 0;
 }
 
 #logo-image {
@@ -24,8 +25,8 @@ body {
 }
 
 .title {
-  font-family: var(--style-2);
-  font-size: 250%;
+  font-family: var(--header-font);
+  font-size: 5rem;
 }
 
 /* NOT FINISHED
@@ -38,47 +39,147 @@ body {
 
 /* Nav Bar */
 
-.navbar {
-  background-color: var(--color-1);
+a {
+  color: var(--alice-blue);
+}
+
+/* header */
+
+.header {
+  background-color: var(--ming);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   overflow: hidden;
+  background-color: var(--ming);
 }
 
-.navbar a {
-  float: right;
+.header li a {
   display: block;
-  color: #000;
-  text-align: center;
-  padding: 1rem 1.2rem;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
   text-decoration: none;
-  font-size: 1.5rem;
 }
 
-.navbar a:hover {
-  background-color: var(--color-1);
-  color: var(--color-3);
+.header li a:hover,
+.header .navbar-btn:hover {
+  background-color: #f4f4f4;
 }
 
-.navbar a.active {
-  background-color: var(--color-4);
-  color: #000;
+.header .logo {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
 }
 
-.navbar .icon {
+/* menu */
+
+.header .navbar {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .navbar-icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .navbar-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 1.8rem;
+}
+
+.header .navbar-icon .navicon:before,
+.header .navbar-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .navbar-icon .navicon:before {
+  top: 5px;
+}
+
+.header .navbar-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .navbar-btn {
   display: none;
 }
 
-.navbar i{
-  font-size: 140%;
+.header .navbar-btn:checked ~ .navbar {
+  max-height: 240px;
 }
 
-/* Main Image */
-    
-  body, html {
-    height: 100%;
+.header .navbar-btn:checked ~ .navbar-icon .navicon {
+  background: transparent;
+}
+
+.header .navbar-btn:checked ~ .navbar-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .navbar-btn:checked ~ .navbar-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .navbar-btn:checked ~ .navbar-icon:not(.steps) .navicon:before,
+.header .navbar-btn:checked ~ .navbar-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    display: flex;
+    justify-content: flex-start;
   }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+/* Main Image */
   
   .welcome-container {
-    background-image: url("/assets/images/arepa-background.jpeg");
+    background-image: url("../images/arepa-background.jpeg");
     height: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,6 +187,7 @@ body {
   }
 
   .welcome-container .title {
+    display: flex;
     justify-content: flex-end;
     align-items: flex-end;
   }
@@ -101,7 +203,7 @@ body {
 /* Deals / Features */
 
   #deals {
-  background-color: var(--color-5);
+  background-color: var(--dark-salmon);
   height: 20rem;
   width: 45%;
   margin: 1rem .5rem 1rem .5rem;
@@ -112,7 +214,7 @@ body {
 /* Experiences */
 
   #experiences {
-    background-color: var(--color-5);
+    background-color: var(--dark-salmon);
     height: 20rem;
     width: 45%;
     margin: 1rem .5rem 1rem .5rem;
@@ -123,20 +225,20 @@ body {
 
 .gallery {
   margin: .5rem;
-  border: 4px solid var(--color-1);
+  border: 4px solid var(--ming);
   border-radius: 4px;
   width: 40rem;
   float:  left;
   justify-content: center;
 }
 
-.gallery:hover {
-  border: 4px solid var(--color-3);
+.gallery:hover .image-description {
+  border: 4px solid var(--alice-blue);
 
 /* NOT SURE WHY THIS TWO WONT WORK */
 
-  background-color: var(--color-3); 
-  color: var(--color-1);
+  background-color: var(--alice-blue); 
+  color: var(--ming);
 }
 
 .gallery img {
@@ -145,8 +247,8 @@ body {
 }
 
 .image-description {
-  background-color: var(--color-1);
-  color: var(--color-3);
+  background-color: var(--ming);
+  color: var(--alice-blue);
   padding: 1rem;
   text-align: center;
 }
@@ -155,7 +257,7 @@ body {
 
 .footer-container{
   align-items: flex-end;
-  background-color: var(--color-2);
+  background-color: var(--blue-green);
   height: 10rem;
 }
 
@@ -217,7 +319,7 @@ body {
 
 .contact-form {
   margin-top: 15rem;
-  color: var(--color-3);
+  color: var(--alice-blue);
   background-color: rgba(65, 57, 57, 0.6);
   max-width: 40rem;
   position: absolute;
@@ -226,22 +328,22 @@ body {
 }
 
 .contact-form h2 {
-  color: var(--color-3);
+  color: var(--alice-blue);
   margin-bottom: 20px;
 }
 
 .text-input {
   background: transparent;
-  color: var(--color-3);
+  color: var(--alice-blue);
   width: 100%;
   height: 2.5rem;
   margin: .5rem 0 2rem 0;
-  border: 1px solid var(--color-3);
+  border: 1px solid var(--alice-blue);
   border-radius: 2px;
 }
 
 .text-input:hover {
-  border-color: var(--color-5);
+  border-color: var(--dark-salmon);
 }
 
 .submit-button {
@@ -251,13 +353,17 @@ body {
   border-radius: 2px;
   padding: 1.5rem 3rem 1.5rem 3rem;
   font-size: 100%;
-  background-color: var(--color-5);
-  color: var(--color-3);
+  background-color: var(--dark-salmon);
+  color: var(--alice-blue);
   
 }
 
 .join-button:hover {
-  background-color: var(--color-3);
-  color: var(--color-5);
+  background-color: var(--alice-blue);
+  color: var(--dark-salmon);
 }
 
+480 (only at max width)
+576 mobile
+768 tablet  
+900d esktop

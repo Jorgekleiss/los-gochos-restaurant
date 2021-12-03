@@ -18,28 +18,21 @@
 
 </head>
     <body>
-        
-        <header>
 
         <!-- Nav Bar -->
 
-            <div class="navbar" id="topnavbar"> 
-                <h1 class="title"><img src="assets/images/logo.png" alt="Logo of restaurant" height="50rem">
-                    Los Gochos <span id="rest">Restaurant</span></h1> 
-                <a href="index.html" class="active">Home</a>
-                <a href="/" target="_blank">About</a>
-                <a href="/">Menu</a>
-                <a href="contact.html" target="_blank">Contact</a>
-                <a href="/" target="_blank">Club</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </header>
-
-
-    
-    
+        <header class="header">
+            <a href="#" class="logo"><h1 class="title"><img src="assets/images/logo.png" alt="Logo of restaurant" height="50rem">
+                Los Gochos <span id="rest">Restaurant</span></h1> </a>
+            <input class="navbar-btn" type="checkbox" id="Navbar" />
+            <label for="Navbar" class="navbar-icon" for="navbar-btn"><span class="navicon"></span></label>
+            <ul class="navbar">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Experiences</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </header>
 
         <!-- Welcome image -->
 
@@ -102,7 +95,7 @@
        
         <!-- Footer -->
         
-        <Footer>
+        <footer>
             
             <div class="footer-container">   
                 <div class="social-media">
@@ -118,17 +111,7 @@
                 </div>
             </div>
             
-        </Footer>
+        </footer>
         
-        <script>
-            function myFunction() {
-            var x = document.getElementById("topnavbar");
-            if (x.className === "navbar") {
-                 x.className += " responsive";
-            } else {
-                 x.className = "navbar";
-                 }
-            }
-        </script>
     </body>
 </html>
