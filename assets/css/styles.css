@@ -22,6 +22,7 @@ body {
 #logo-image {
     height: 5rem;
     width: 5rem;
+    margin: 0;
 }
 
 .title {
@@ -95,7 +96,7 @@ a {
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
-  padding: 28px 20px;
+  padding: 3rem 2rem;
   position: relative;
   user-select: none;
 }
@@ -111,7 +112,7 @@ a {
 
 .header .navbar-icon .navicon:before,
 .header .navbar-icon .navicon:after {
-  background: #333;
+  background: #000;
   content: '';
   display: block;
   height: 100%;
@@ -155,15 +156,15 @@ a {
   top: 0;
 }
 
-/* 48em = 768px */
+/* Tablet media query 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 768px) {
   .header li {
     display: flex;
     justify-content: flex-start;
   }
   .header li a {
-    padding: 20px 30px;
+    padding: 2rem 3rem;
   }
   .header .menu {
     clear: none;
@@ -178,18 +179,18 @@ a {
 
 /* Main Image */
   
-  .welcome-container {
-    background-image: url("../images/arepa-background.jpeg");
-    height: 80%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.welcome-container {
+  background-image: url("assets/images/arepa-background.jpeg");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   }
 
-  .welcome-container .title {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+.welcome-container .title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   }
 
 /* Deals/ features and experiences container */
@@ -197,12 +198,13 @@ a {
 .content-container {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  display: flex;
   justify-content: center;
 }
 
-/* Deals / Features */
+/* Information boxes */
 
-  #deals {
+  .content-container .info-box {
   background-color: var(--dark-salmon);
   height: 20rem;
   width: 45%;
@@ -211,16 +213,6 @@ a {
   }
 
 
-/* Experiences */
-
-  #experiences {
-    background-color: var(--dark-salmon);
-    height: 20rem;
-    width: 45%;
-    margin: 1rem .5rem 1rem .5rem;
-    border-radius: 4px;
-    }
-
 /* Gallery */
 
 .gallery {
@@ -228,15 +220,12 @@ a {
   border: 4px solid var(--ming);
   border-radius: 4px;
   width: 40rem;
-  float:  left;
+  display: flex;
   justify-content: center;
 }
 
 .gallery:hover .image-description {
   border: 4px solid var(--alice-blue);
-
-/* NOT SURE WHY THIS TWO WONT WORK */
-
   background-color: var(--alice-blue); 
   color: var(--ming);
 }
@@ -256,14 +245,16 @@ a {
 /* footer */
 
 .footer-container{
-  align-items: flex-end;
+  display: flex;
+  align-content: flex-end;
   background-color: var(--blue-green);
   height: 10rem;
 }
 
 .social-media {
+  display: flex;
   align-items: center;
-  display: inline;
+  flex-direction: row;
 }
 
 .social-media i {
@@ -276,32 +267,7 @@ a {
 /* Media Queries */
 
 
-@media screen and (max-width: 600px) {
-  .navbar a {
-    display: none;
-  }
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-
-}
-
-@media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-@media screen and (max-width: 940px) {
+@media screen and (min-width: 940px) {
   #rest {
     display: none;
   }
@@ -362,8 +328,3 @@ a {
   background-color: var(--alice-blue);
   color: var(--dark-salmon);
 }
-
-480 (only at max width)
-576 mobile
-768 tablet  
-900d esktop
