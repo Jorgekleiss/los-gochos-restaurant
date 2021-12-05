@@ -10,6 +10,7 @@
 
 html {
   font-size: 62.5%;
+  height:  100%;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
     font-size: 1.6rem;
     height:  100%;
     margin: 0;
+
 }
 
 #logo-image {
@@ -30,13 +32,6 @@ body {
   font-size: 5rem;
 }
 
-/* NOT FINISHED
-#wrapper { 
-  min-height: 100%; 
-  height: auto !important; 
-  height: 100%; 
-  margin: 0 auto -10rem; 
-} */
 
 /* Nav Bar */
 
@@ -48,30 +43,27 @@ a {
 
 .header {
   background-color: var(--ming);
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
-  z-index: 3;
 }
 
 .header ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  overflow: hidden;
   background-color: var(--ming);
 }
 
 .header li a {
   display: block;
-  padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
+  padding: 2rem 2rem;
+  border-right: 1px solid var(--alice-blue);
   text-decoration: none;
 }
 
 .header li a:hover,
 .header .navbar-btn:hover {
-  background-color: #f4f4f4;
+  background-color: var(--alice-blue);
 }
 
 .header .logo {
@@ -102,22 +94,22 @@ a {
 }
 
 .header .navbar-icon .navicon {
-  background: #333;
+  background: var(--alice-blue);
   display: block;
-  height: 2px;
+  height: 3px;
   position: relative;
   transition: background .2s ease-out;
-  width: 1.8rem;
+  width: 2rem;
 }
 
 .header .navbar-icon .navicon:before,
 .header .navbar-icon .navicon:after {
-  background: #000;
+  background: var(--alice-blue);
   content: '';
   display: block;
   height: 100%;
   position: absolute;
-  transition: all .2s ease-out;
+  transition: all .3s ease-out;
   width: 100%;
 }
 
@@ -156,32 +148,17 @@ a {
   top: 0;
 }
 
-/* Tablet media query 768px */
-
-@media (min-width: 768px) {
-  .header li {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .header li a {
-    padding: 2rem 3rem;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
+.logo:hover {
+  text-decoration: none;
+  color: var(--blue-green)
 }
-
 
 /* Main Image */
   
-.welcome-container {
-  background-image: url("assets/images/arepa-background.jpeg");
-  height: 80%;
+.welcome-image {
+  background-image: url('assets/images/arepa-background.jpeg');
+  height: 100%;
+  margin-top: 3rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -248,13 +225,19 @@ a {
   display: flex;
   align-content: flex-end;
   background-color: var(--blue-green);
-  height: 10rem;
+  height: 6rem;
+  display: cover
 }
 
 .social-media {
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: row;
+}
+
+.social-media .social-media-item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-media i {
@@ -263,24 +246,49 @@ a {
   padding: 5%;
   color: #000;
 }
+.copyright {
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+
+.copyright p {
+  font-size: small;
+}
 
 /* Media Queries */
 
 
-@media screen and (min-width: 940px) {
+@media screen and (max-width: 1160px) {
   #rest {
+    display: none;
+  }
+}
+
+/* Tablet media query 768px */
+
+@media (min-width: 875px) {
+ 
+  .header .navbar-item a {
+    padding: 2rem 3rem;
+  }
+  .header .navbar {
+    clear: none;
+    display: flex;
+    justify-content: flex-end;
+    max-height: none;
+  }
+  .header .navbar-icon {
     display: none;
   }
 }
 
 /* CONTACT PAGE */
 
-.form-section {
-  clear: left;
-  background: url(assets/images/contact-background.jpeg);
+.contact-section {
+  background: url('assets/images/contact-background.jpeg');
   background-size: cover;
   background-position: center;
-  height: 90rem;
+  height: 50rem;
 }
 
 .contact-form {
@@ -288,7 +296,6 @@ a {
   color: var(--alice-blue);
   background-color: rgba(65, 57, 57, 0.6);
   max-width: 40rem;
-  position: absolute;
   left: 10%;
   padding: 3rem;
 }
@@ -296,10 +303,11 @@ a {
 .contact-form h2 {
   color: var(--alice-blue);
   margin-bottom: 20px;
+  font-family: var(--header-font);
 }
 
 .text-input {
-  background: transparent;
+  /* background: transparent; */
   color: var(--alice-blue);
   width: 100%;
   height: 2.5rem;
