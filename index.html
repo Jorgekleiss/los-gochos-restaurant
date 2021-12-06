@@ -28,69 +28,81 @@
             <label for="Navbar" class="navbar-icon" for="navbar-btn"><span class="navicon"></span></label>
             <ul class="navbar">
               <li class="navbar-item"><a href="#">About</a></li>
-              <li class="navbar-item"><a href="#">Experiences</a></li>
+              <li class="navbar-item"><a href="#experiences">Experiences</a></li>
               <li class="navbar-item"><a href="#">Menu</a></li>
-              <li class="navbar-item"><a href="#">Contact</a></li>
+              <li class="navbar-item"><a href="/contact.html">Contact</a></li>
             </ul>
           </header>
 
         <!-- Welcome image -->
 
-        <section class="welcome-image">
-            <h2 class="title">Welcome to a latino Experience.</h1>
+        <section>
+            <div class="container welcome-image">
+                <h2 class="title">Welcome to a latino Experience.</h1>
+            </div>
         </section>
 
         <!-- Information boxes -->
 
-        <section>
-            <div class="content-container">
+        <section id="content-section">
+            <div class=" container content-container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-6" id="deals">
-
-
-                        <h2> Deals / Features Section</h2>
-
+                    <div class="col-12 col-sm-6 info-box" id="deals">
+                        <article>
+                            <img src="assets/images/plato-navideno-venezolano.jpeg" alt="Traditional Venezuelan Christmas meal">
+                            <h3>Plato Navideño (Christmas traditional dish)</h3>
+                            <p>Delitious combination of flavours all fresly prepared in house, consisting in an Hallaca, chicken salad, ham bread, and pork roast</p>
+                        </article>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6" id="experiences">
+                    <div class="col-12 col-sm-6 info-box" id="experiences">
 
-                         <h2>what our customers have to say about us...</h2>
+                         <h2>What our customers have to say about us...</h2>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="text-uppercase">Quotes:</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <blockquote class="blockquote">
+                                        <p>Since I left venezuela over 10 years ago, this were the best empanadas i've ever had!.</p>
+                                        <footer class="blockquote-footer">Amarilis del Carmen <cite title="Intagram">Intagram</cite></footer>
+                                    </blockquote>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <blockquote class="blockquote">
+                                        <p>The food is incredible, the place just has such a fun vibe to be in, and it just feels like once to go through the doors, you are back in Venezuela.</p>
+                                        <footer class="blockquote-footer">Jessica M. <cite title="Intagram">Intagram</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>  
         </section>
 
-        <!-- Gallery -->
-            <section>
-                <div class="gallery">
-                    <a target="_blank" href="assets/images/welcome.jpeg">
-                        <img src="assets/images/welcome.jpeg" alt="We are Open sign with staff member" height="400"></a>
-                    <div class="image-description">Our staff are always happy to welcome you to our restaurant and provide you with a wonderfull experience</div>
+        <div class="gallery-container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
+                    <img src="assets/images/front-counter.jpeg" alt="Restaurant Till area / counter with fresh bread selection" /> 
                 </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="assets/images/front-counter.jpeg">
-                        <img src="assets/images/front-counter.jpeg" alt="Restaurant Till area / counter with fresh bread selection" width="600" height="400"></a>
-                    <div class="image-description">We will always have freshly prepared food, and will do our best to cater for your specific needs</div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
+                    <img src="assets/images/empanada.jpeg" alt="Plate of freshly fried empanadas" />
                 </div>
-  
-                <div class="gallery">
-                    <a target="_blank" href="assets/images/coffee-table.jpeg">
-                        <img src="assets/images/coffee-table.jpeg" alt="Picture of table with coffee, cake and a laptop" width="600" height="400"></a>
-                    <div class="image-description">We are also here if what you are after is a place to sit down and grab a cup of coffe with a slice of cake.</div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
+                    <img src="assets/images/welcome.jpeg"  alt="e are Open sign with staff member" />
                 </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="assets/images/fresh-fruit.jpeg">
-                        <img src="assets/images/fresh-fruit.jpeg" alt="Plate with fresh fruit and a glass of juice" width="600" height="400"></a>
-                    <div class="image-description">We only use the freshest ingredients in season, to bring out the amazing natural flavours of food.</div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
+                    <img src="assets/images/pabellon.jpeg" alt="Pabellon, the National Venezuelan dish" />
                 </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="assets/images/dancing.png">
-                        <img src="assets/images/dancing.png" alt="Couple salsa dancing." width="600" height="400"></a>
-                    <div class="image-description">If you like music and dancing, dont be afraid to get up and dance in the middle of your meal.</div>
+                    <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
+                <img src="assets/images/arepa.jpeg"  alt="Arepa, with chiken and avocado, this conination is refered as a Reina Pepeada" />
                 </div>
-            </section>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
+                    <img src="assets/images/cachapa.jpeg" alt="Cachapa, cheese filled corn pancake" />
+                </div>
+            </div>
+        </div>        
 
         <!-- Contact Section -->
 
@@ -100,7 +112,7 @@
                     <div class="col-sm-12 col-md-6">
                         <div class="contact-form">
                             <form class="signup-form" method="post" action="#">
-                                <h2>Contact Los Gochos Restaurant</i></h2>
+                                <h1>Contact Los Gochos Restaurant</h1>
                     
                                 <labelfor="fullname">Full Name</label>
                                 <input class="text-input" id="fullname" type="text" name="full_name" placeholder="Your first and last Name" required>
@@ -112,7 +124,7 @@
                                 <input class="text-input" id="subject" type="text" name="message-subject" placeholder="Brief description of your message" required>
 
                                 <labelfor="email">Message</label>
-                                <input class="text-input" id="content" type="text" name="message-contect" placeholder="Let it all out and give us as much detail as you can about your querry or feedback" row="5" required>
+                                <input class="text-input" id="content" type="text" name="message-contect" placeholder="Let it all out and give us as much detail as you can about your querry or feedback" rows="5" required>
                                 
                                 <label for="both">Sign me up for your Newsletter</label>
                                 <input type="checkbox" id="newsletter" name="newsletter-signup" value="yes" required>
