@@ -182,13 +182,18 @@ a {
 
 /* Information boxes */
 
-  .info-box {
+.info-box {
   background-color: var(--dark-salmon);
-  height: 20rem;
+  height: auto;
   width: 45%;
   margin: 1rem .5rem 1rem .5rem;
   border-radius: 4px;
   display: inline-block;
+  }
+  #deals img {
+    height: 15rem;
+    padding: 1rem;
+    border-radius: 2px;
   }
 
 
@@ -270,17 +275,17 @@ a {
 
 @media (min-width: 875px) {
  
-  .header .navbar-item a {
-    padding: 2rem 3rem;
+.header .navbar-item a {
+  padding: 2rem 3rem;
   }
-  .header .navbar {
-    clear: none;
-    display: flex;
-    justify-content: flex-end;
-    max-height: none;
+.header .navbar {
+  clear: none;
+  display: flex;
+  justify-content: flex-end;
+  max-height: none;
   }
-  .header .navbar-icon {
-    display: none;
+.header .navbar-icon {
+  display: none;
   }
 }
 
