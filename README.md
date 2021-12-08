@@ -20,16 +20,15 @@ Image of website of various devices
       - [Colour scheme](#colour-scheme)
       - [Typography](#typography)
       - [Imagery](#imagery)
-    + [Wireframes (ADD LINKS TO WIRE FRAMES)](#wireframes--add-links-to-wire-frames-)
+    + [Wireframes](#wireframes)
     + [Features](#features)
     + [Technologies used](#technologies-used)
-    + [Frameworks, libraries and programs used.  (ADD LINKS TO ALL ITEMS)](#frameworks--libraries-and-programs-used---add-links-to-all-items-)
+      - [Languages used](#languages-used)
+      -  [Tools, Frameworks, Libraries and Programs used.](#tools-frameworks-libraries-and-programs-used)
     + [Testing](#testing)
       - [Known bugs](#known-bugs)
   * [Deployment](#deployment)
     + [Acknowledgements](#acknowledgements)
-
-
 
 # User experience (UX)
 
@@ -84,35 +83,33 @@ Image of website of various devices
 - [Home page on a Desktop](wireframes/restaurant-dektop.png)
 
 # Features
-•	 Responsive site across a variety of devices.
-•	 Interactive elements 
-•	 Accessibility 
+-	 Responsive site across a variety of devices.
+- Interactive elements 
+-	 Accessibility 
 
 ## Technologies used
 
-•	Languages used
-o	HTML5
-o	CSS3
+###	Languages used
+-	HTML5
+-	CSS3
 
-## Tools, Frameworks, libraries and programs used.  
+### Tools, Frameworks, libraries and programs used.  
 -	[Bootstrap 5.1.3](https://getbootstrap.com/docs/5.1/getting-started/introduction/):
 Bootstrap was used to assist with the responsiveness and styling of the website.
--	Hover.css:
-Hover.css was used on the Navbar, gallery and Social Media icons in the footer to add responsivness to the links.
+-	Hover.css was used on the Navbar, gallery and Social Media icons in the footer to add responsivness to the links.
 -	[Google Fonts](https://fonts.google.com/):
 Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
 -	[Font Awesome](https://fontawesome.com/):
 Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
--	[Git]()
-Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+-	Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 -	[GitHub](https://github.com/):
 GitHub is used to store the projects code after being pushed from Git.
 -	[Balsamiq](https://balsamiq.com/wireframes/):
 Balsamiq was used to create the wireframes during the design process.
-- [Markdown-toc](http://ecotrust-canada.github.io/markdown-toc/Table of contents generated with markdown-toc.
+- [Markdown-toc](http://ecotrust-canada.github.io/markdown-toc/): Table of contents generated with markdown-toc.
 - [W3C HTML Validation Service:]( https://validator.w3.org/) to check the sites HTML code.
 - [W3C CSS Validation Service:](https://jigsaw.w3.org/css-validator/)  to check the sites CSS code.
-- [Coolors:](https://coolors.co/) to generate the sites color pallete.
+- [Coolors](https://coolors.co/): to generate the sites color pallete.
 
 
 [Back to top](#table-of-contents)
@@ -126,6 +123,9 @@ Testing used stories from user experience section
 -	A lot of testing was done to ensure that all of the links in the pages worked correctly.
 -	Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. This was done in various countries across different languages. 
 
+- HTML Validator [Results](ADD LINKS WHEN AVAILABLE)
+
+- CSS Validator [Results](ADD LINKS WHEN AVAILABLE)
 
 #### Known bugs
 
