@@ -32,8 +32,8 @@
         <header class="header">
             <a href="#" class="logo"><h1 class="title"><img src="assets/images/logo.png" alt="Logo of restaurant" height="50rem">
                 Los Gochos <span id="rest">Restaurant</span></h1> </a>
-            <input class="navbar-btn" type="checkbox" id="Navbar" />
-            <label for="Navbar" class="navbar-icon" for="navbar-btn"><span class="navicon"></span></label>
+            <input class="navbar-btn" type="checkbox" id="navbar" />
+            <label for="navbar" class="navbar-icon" for="navbar-btn"><span class="navicon"></span></label>
             <ul class="navbar">
               <li class="navbar-item"><a href="#">About</a></li>
               <li class="navbar-item"><a href="#experiences">Experiences</a></li>
@@ -46,7 +46,7 @@
         <!-- Welcome image -->
 
         <section>
-            <div class="container welcome-image">
+            <div class="welcome-image">
                 <h2 class="title">Welcome to a latino Experience.</h1>
             </div>
         </section>
@@ -59,8 +59,10 @@
                     <div class="col-12 col-sm-6 info-box" id="deals">
                         <article>
                             <h3>Plato Navideño (Christmas traditional dish)</h3>
-                            <img src="assets/images/plato-navideno-venezolano.jpeg" alt="Traditional Venezuelan Christmas meal">
-                            <span>Delitious combination of flavours all fresly prepared in house, consisting in an Hallaca, chicken salad, ham bread, and pork roast</span>
+                            <span>
+                                <img src="assets/images/plato-navideno-venezolano.jpeg" alt="Traditional Venezuelan Christmas meal">
+                                Delitious combination of flavours all fresly prepared in house, consisting in an Hallaca, chicken salad, ham bread, and pork roast.
+                            </span>
                         </article>
                     </div>
                     <div class="col-12 col-sm-6 info-box" id="experiences">
@@ -109,7 +111,10 @@
                     <img src="assets/images/cachapa.jpeg" alt="Cachapa, cheese filled corn pancake" />
                 </div>
             </div>
-        </div>   
+        </div>  
+
+
+         <!-- Menu Section --> 
         
         <section class="container menu-container" id="menu">
             <div>
@@ -152,68 +157,7 @@
             </div>
         </section>
         </div>    
-        
-        <!-- Menu Section -->
 
-
-        <section id="menu-section">
-            <div class="gallery-container">
-                <div class="row d-flex flex-wrap align-items-center"> 
-
-
-                    <div class="col-sm-12">
-                        <h2>Small bites</h2>
-                        <ul>
-                            <li>Tequeños</li>
-                            <li>Arepita frita</li>
-                            <li>Yuga frita</li>
-                            <li>Pasteles</li>
-                            <li></li>
-
-                        </ul>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <h2>Big bites</h2>
-                        <ul>
-                            <li>Arepa</li>
-                                <ul>
-                                    <li>Catira</li>
-                                    <li>Reina pepeada</li>
-                                    <li>Domino</li>
-                                    <li></li>
-                                </ul>
-                            <li>Cachapa con queso y cochino frito</li>
-                            <li>Pabellon</li>
-                            <li>Plato Navideño</li>
-                            <li></li>
-
-                        </ul>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <h2>Sweet bites</h2>
-                        <ul>
-                            <li>Torta Tres Leches</li>
-                            <li>Quesillo</li>
-                            <li></li>
-
-                        </ul>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <h2>Drinks</h2>
-                        <ul>
-                            <li>Chicha</li>
-                            <li>Malta</li>
-                            <li>Papelon</li>
-                            <li>Natural Juice of the day</li>
-                            <li>Water</li>
-
-                        </ul>
-                    </div>
-                    
-        </section>
         <!-- Contact Section -->
 
         <section id="contact-section">
@@ -240,7 +184,7 @@
                                 <label for="both">Sign me up for your Newsletter</label>
                                 <input type="checkbox" id="newsletter" name="newsletter-signup" value="yes" required>
                                     
-                                <input class="submit-button" type="submit" value="Submit">
+                                <input class="submit-button" type="submit" value="Submit" data-toggle="modal" data-target="#contact-los-gochos">
                             </form>
                         </div>
                     </div>
@@ -255,23 +199,34 @@
 
         <!-- Footer -->
         
-        <footer>
-            
-            <div class="footer-container">   
-                <div class="social-media">
-                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square" alt="Link to our Facebook Page" class="social-media-item"></i></a>
-                    <a href="https://www.Instagram.com" target="_blank"><i class="fab fa-instagram" alt="Link to our Instagram Page" class="social-media-item"></i></a>
-                    <a href="https://www.Yelp.com" target="_blank"><i class="fab fa-yelp" alt="Link to our Yelp Page" class="social-media-item"></i></a>
-                    <a href="https://www.tripadvisor.com" target="_blank"><img src="assets/images/trip-advisor.png" height="25rem" alt="Link to our Tripadvisor Page" class="social-media-item"></a>
-                    <a href="https://www.google.com" target="_blank"><i class="fab fa-google" alt="Link to our Google Maps Review Page" class="social-media-item"></i></a>
-                </div> 
-                <br>        
+        <footer class="footer-container">
+                <div class="social-media-menu">
+                    <a href="https://www.facebook.com" target="_blank"  class="social-media-item"><i class="fab fa-facebook-square" alt="Link to our Facebook Page"></i></a>
+                    <a href="https://www.Instagram.com" target="_blank"  class="social-media-item"><i class="fab fa-instagram" alt="Link to our Instagram Page"></i></a>
+                    <a href="https://www.Yelp.com" target="_blank"  class="social-media-item"><i class="fab fa-yelp" alt="Link to our Yelp Page"></i></a>
+                    <a href="https://www.google.com" target="_blank"  class="social-media-item"><i class="fab fa-google" alt="Link to our Google Maps Review Page"></i></a>
+                </div>       
                 <div class="copyright">
-                     <p>Copyright © - Los Gochos Restaurant 2021</p>    
+                     <p>Website created with Latino Flavour - Los Gochos Restaurant 2021</p>    
                 </div>
-            </div>
             
         </footer>
         
+<!-- Modal for Reply message of Contact form -->
+
+
+        <div class="modal" tabindex="-1" role="dialog" id="contact-los-gochos">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Thanks for contacting us, we will get back to you as soon as we can!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>

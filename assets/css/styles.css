@@ -69,11 +69,12 @@ a {
 }
 
 .header .logo {
-  display: flex;
-  justify-content: flex-start;
+  display: inline-flex;
+  justify-content: space-between;
   font-size: 2rem;
   padding: 1rem 2rem;
   text-decoration: none;
+  width: 80%;
 }
 
 /* menu */
@@ -88,7 +89,7 @@ a {
 
 .header .navbar-icon {
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   justify-content: flex-end;
   padding: 3rem 2rem;
   position: relative;
@@ -267,19 +268,21 @@ text-decoration: none;
   height: 6rem;
   display: cover
 }
-.social-media {
+.social-media-menu {
   padding-left: 6rem;
   padding-right: 6rem;
 }
 
-.social-media .social-media-item {
+.social-media-item {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   margin: 3px;
 }
 
-.social-media i {
+.social-media-item i {
   color: var(--alice-blue);
+  font-size: 1.5rem;
 }
 .copyright {
   justify-content: flex-end;
