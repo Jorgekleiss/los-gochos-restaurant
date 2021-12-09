@@ -326,13 +326,6 @@ transform: rotate(45deg);
 
 /* Contact Section */
 
-.contact-section {
-  background: url("assets/images/contact-background.jpeg");
-  background-size: cover;
-  background-position: center;
-  height: 50rem;
-}
-
 .contact-form {
   color: var(--alice-blue);
   background-color: var(--blue-green);
