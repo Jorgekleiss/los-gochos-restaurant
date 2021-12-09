@@ -1,6 +1,6 @@
 # Los Gochos Restaurant
 
-Link to live page
+[Link to live page](https://jorgekleiss.github.io/los-gochos-restaurant/)
 
 Los Gochos Restaurant is a small family owned restaurant, owned and ran by a Venezuelan couple from Merida-Venezuela. We pride in having a fun and enjoyable environment when people can meet up for great food, a few drinks or just a place to relax with friend and enjoy Latino America music. 
 
@@ -68,9 +68,10 @@ Image of website of various devices
 [Back to top](#table-of-contents)
 # Design 
 #### Colour scheme
- ![Colour Palette](assets/images/palette.png)
+ ![Colour Palette](wireframes/palette.png)
 #### Typography 
-•	 
+- Architects Daughter was used for the main headings and titles.
+- Playfair Display was used for the body of the page.
 #### Imagery 
 - Trip Advisor Image from "Free Vector Silhouette - Logo Tripadvisor Eps Clipart@pikpng.com".
 - Standard restaurant images downloaded from the free library by [rawpixel.com](http://www.rawpixel.com).
@@ -90,33 +91,29 @@ Image of website of various devices
 ## Technologies used
 
 ###	Languages used
--	HTML5
--	CSS3
+-	HTML
+-	CSS
 
 ### Tools, Frameworks, libraries and programs used.  
--	[Bootstrap 5.1.3](https://getbootstrap.com/docs/5.1/getting-started/introduction/):
-Bootstrap was used to assist with the responsiveness and styling of the website.
--	Hover.css was used on the Navbar, gallery and Social Media icons in the footer to add responsivness to the links.
--	[Google Fonts](https://fonts.google.com/):
-Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
--	[Font Awesome](https://fontawesome.com/):
-Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
--	Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
--	[GitHub](https://github.com/):
-GitHub is used to store the projects code after being pushed from Git.
--	[Balsamiq](https://balsamiq.com/wireframes/):
-Balsamiq was used to create the wireframes during the design process.
-- [Markdown-toc](http://ecotrust-canada.github.io/markdown-toc/): Table of contents generated with markdown-toc.
-- [W3C HTML Validation Service:]( https://validator.w3.org/) to check the sites HTML code.
-- [W3C CSS Validation Service:](https://jigsaw.w3.org/css-validator/)  to check the sites CSS code.
-- [Coolors](https://coolors.co/): to generate the sites color pallete.
+
+-	[Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+-	[Google Fonts](https://fonts.google.com/)
+-	[Font Awesome](https://fontawesome.com/)
+-	[GitHub](https://github.com/)
+-	[Balsamiq](https://balsamiq.com/wireframes/)
+- [Markdown-toc](http://ecotrust-canada.github.io/markdown-toc/)
+- [W3C HTML Validation Service:]( https://validator.w3.org/)
+- [W3C CSS Validation Service:](https://jigsaw.w3.org/css-validator/) 
+- [Coolors](https://coolors.co/)
+-	Hover.css
+- Git
 
 
 [Back to top](#table-of-contents)
 
 ## Testing
 
-Testing used stories from user experience section
+ELABORATE MORE ON MY EXPERIENCE TESTING THE SITE
 
 -	This Website was tested on Safari, Brave, Google Chrome, Internet Explorer.
 -	The website was viewed on a variety of devices such as Desktop, Laptop, iPad PRO, iPhone 12 & iPhone12 PRO.
@@ -132,14 +129,14 @@ Testing used stories from user experience section
 # Deployment
 Following writing the code then commiting and pushing to GitHub, this project was deployed using GitHub by the following steps.
 
-Navigate to the repository on github and click 'Settings'.
-Then select 'Pages' on the side navigation.
-Select the 'None' dropdown, and then click 'master'.
-Click on the 'Save' button.
-Now the website is now live on https://sam-timmins.github.io/T4Tri-triathlon-club/
-If any changes are required, they can be done, commited and pushed to GitHub and the changes will be updated.
+1. Navigate to the repository on github and click 'Settings'.
+2. Then select 'Pages' on the side navigation.
+3. Select the 'None' dropdown, and then click 'master'.
+4. Click on the 'Save' button.
+5. Now the website is now live on https://jorgekleiss.github.io/los-gochos-restaurant/
+- If any changes are required, they can be done, commited and pushed to GitHub and the changes will be updated.
 
-  [Back to top](#table-of-contents)
+[Back to top](#table-of-contents)
 
 #	Acknowledgements 
 -	To my Mentor for his continuous support and extremely helpful feedback.
