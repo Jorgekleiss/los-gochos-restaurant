@@ -38,19 +38,21 @@
               <li class="navbar-item"><a href="#">About</a></li>
               <li class="navbar-item"><a href="#experiences">Experiences</a></li>
               <li class="navbar-item"><a href="#menu">Menu</a></li>
-              <li class="navbar-item"><a href="#menu-section">Menu</a></li>
               <li class="navbar-item"><a href="/contact.html">Contact</a></li>
             </ul>
           </header>
 
         <!-- Welcome image -->
 
-        <section>
-            <div class="welcome-image">
-                <h2 class="title">Welcome to a latino Experience.</h1>
+        <section class="welcome-section">
+            <div class="welcome-image"></div>
+            <div class="welcome-text">
+                <h1>Welcome to a latino Experience.</h1>
             </div>
+            
+            
         </section>
-
+<br>
         <!-- Information boxes -->
 
         <section id="content-section">
@@ -89,7 +91,7 @@
                 </div>
             </div>  
         </section>
-
+<br>
         <div class="container gallery-container">
             <div class="row d-flex flex-wrap align-items-center">
                 <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
@@ -113,7 +115,7 @@
             </div>
         </div>  
 
-
+<br>
          <!-- Menu Section --> 
         
         <section class="container menu-container" id="menu">
@@ -158,6 +160,7 @@
         </section>
         </div>    
 
+        <br>
         <!-- Contact Section -->
 
         <section id="contact-section">
@@ -166,7 +169,7 @@
                 <div class="row">
                     <div class="col-sm-12 col-lg-6">
                         <div class="contact-form">
-                            <form class="signup-form" method="post" action="#">
+                            <form  method="post" action="#contact-los-gochos">
                                 <h1>Contact Los Gochos Restaurant</h1>
                         
                                 <labelfor="fullname">Full Name</label>
@@ -182,7 +185,7 @@
                                 <input class="text-input" id="content" type="text" name="message-contect" placeholder="Let it all out and give us as much detail as you can about your querry or feedback" rows="5" required>
                                     
                                 <label for="both">Sign me up for your Newsletter</label>
-                                <input type="checkbox" id="newsletter" name="newsletter-signup" value="yes" required>
+                                <input type="checkbox" id="newsletter" name="newsletter-signup" value="yes"
                                     
                                 <input class="submit-button" type="submit" value="Submit" data-toggle="modal" data-target="#contact-los-gochos">
                             </form>
@@ -219,11 +222,13 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Thanks for contacting us, we will get back to you as soon as we can!</h5>
+                        <h5 class="modal-title">Contact</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
-
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    <div class="modal-body">
+                        <img src="assets/images/arepa-woman.jpeg alt="Aoman eating an arepa">
+                        <p class="modal-body">Thanks for contacting us, we will get back to you as soon as we can!</p>
                 </div>
             </div>
         </div>
