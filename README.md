@@ -50,22 +50,26 @@ Image of website of various devices
 3.	As a frequent user, I want to know about events taking place.
 4.	As a frequent user, I want to be able to sign up to some sort of rewards club
 # Site owner Goals
-- 
-- 
-- 
+- Provide information for the customer to not just feel safe about their visit, but also to know more about us, our menu and our country before they arrive to the restaurant.
+- Let customers know about Deals or specials there may be on.
+- Provide an easy way to comunicate to with restaurant staff.
+- Direct as manu people as possible to out social media pages, and promote our experience.
+- Increase the amount of viitors to the site. 
 
 ### Requirements and expectations
 #### Requirements
-- 
-- 
-- 
+- The site must be easy to understand and navigate.
+- The information displayed must be easy to read and understand.
+- The pictures used will be just like the food served on the restaurant.
 
 #### Expectations
-- 
-- 
-- 
+- We expect the links of social media and to the different sections of the site to work.
+- Once a message has been sent, we expect the correct information to be added to the form in orther to contact the customer back. 
+- We expect the site to be visible in various screen sizes and adjust to them acordinly. 
+
 
 [Back to top](#table-of-contents)
+
 # Design 
 #### Colour scheme
  ![Colour Palette](wireframes/palette.png)
@@ -85,16 +89,16 @@ Image of website of various devices
 
 # Features
 -	 Responsive site across a variety of devices.
-- Interactive elements 
+-  Interactive elements 
 -	 Accessibility 
 
 ## Technologies used
 
-###	Languages used
+###	Languages
 -	HTML
 -	CSS
 
-### Tools, Frameworks, libraries and programs used.  
+### Tools, Frameworks, libraries and programs.  
 
 -	[Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
 -	[Google Fonts](https://fonts.google.com/)
@@ -111,7 +115,7 @@ Image of website of various devices
 
 [Back to top](#table-of-contents)
 
-## Testing
+# Testing
 
 ELABORATE MORE ON MY EXPERIENCE TESTING THE SITE
 
