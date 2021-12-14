@@ -11,7 +11,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <title>Los Gochos Restaurant</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=M+PLUS+1+Code:wght@600&family=Playfair+Display:ital,wght@0,500;0,900;1,600&display=swap">
@@ -127,41 +127,132 @@
                 <h2>Small Bites</h2>
                 <ul>
                     <li>Tequeños.</li>
+                    <p>Fried Cheese Sticks.</p>
                     <li>Pasteles.</li>
+                    <p>Fried savory pastry stuffed with cheese or mince beef.</p>
                     <li>Arepitas fritas.</li>
+                    <p>Fried corn meal falt bread, served with sour cream.</p>
                     <li>Yuca frita.</li>
-                    <li>Pan de jamon. <div class="christmas-special">Christmas Special</div></li>
+                    <p>Fried Casaba sticks.</p>
+                    <li>Pan de jamon. <span class="badge badge-pill badge-success">Christmas Special</span></li>
+                    <p>Rolled Bread stuffed with ham, bacon, olvies and raisins.</p>
                 </ul>
                 <h2>Big Bites</h2>
                 <ul>
                     <li>Arepas.</li>
+                    <p>Arepas are a traditional venezuelan meal made out of precooked cornmeal shaped in to round flat discs and cook over a flat top. </p>
                     <ul>
+                        <h3>Choose your stuffing:</h3>
                         <li>Reina Pepeada.</li>
+                        <p>Chiken, avocado and mayo.</p>
                         <li>Catira.</li>
+                        <p>Shredded beef brisket with chedar cheese.</p>
                         <li>Domino.</li>
+                        <p>Black turtle beans with white cheese.</p>
                         <li>Simple.</li>
+                        <p>Good old fashioned ham and cheese.</p>
                     </ul>
                     <li>Cachapa con queso.</li>
+                    <p>Traditional corn pancakes made with fresh corn, and stuffed with cheese and a touch of fresh butten.</p>
                     <li>Pabellon.</li>
-                    <li>Plato Navideño. <div class="christmas-special">Christmas Special</div></li>
-                    
+                    <p>Pabellon is the National Venezuelan. composed of white rice, black beans, fried plantain, and shredded beef.</p>
+                    <li>Plato Navideño. <span class="badge badge-pill badge-success">Christmas Special</span></li>
+                    <p>A very special dish for a very special holiday season. This amazing creation comes with an hallaca (similar to a mexican tamal) stuffed with various meats and vegetables, and cooked for a long time inside of platain leaves. this is serverd with our fantastic ham bread and a chicken salad. </p>
                 </ul>
                 <h2>Sweet Bites</h2>
                 <ul>
                     <li>Torta Tres Leches.</li>
+                    <p>This insanely tasty treat is made by soacking a white sponge cake in a mixture of three milks (tres leches) made of heavy cream, evaporated milk and condenced milk.</p>
                     <li>Quesillo.</li>
-                    <li>Chicha</li>
+                    <p>Venezuelan version of crème caramel. </p>
+                    <li>Chicha de arroz</li>
+                    <p>Creamy sweet drink made of rice and milk with vanilla and cinamon.</p>
                 </ul>
                 <h2>Drinks</h2>
                 <ul>
                     <li>Jugo Natural del dia</li>
+                    <p>Freshly made natural juices. Please check specials board for todays flavour.</p>
                     <li>Papelon con Limon</li>
+                    <p>lemonade sweetened with molases</p>
                     <li>Malta</li>
+                    <p>Traditional fizzy sweet malted drink (Polar, of course)</p>
                     <li>Water</li>
+                    <p></p>
                 </ul>
             </div>
         </section>
         </div>    
+
+        <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#small-bites-menu" aria-expanded="false" aria-controls="small-bites-menu">Small Bites</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#big-bites-menu" aria-expanded="false" aria-controls="big-bites-menu">Big Bites</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#sweet-bites-menu" aria-expanded="false" aria-controls="sweet-bites-menu">Sweet Bites</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#drinks-menu" aria-expanded="false" aria-controls="drinks-menu">Drinks</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="#small-bites-menu #big-bites-menu #sweet-bites-menu #drinks-menu">Open all Menu</button>
+          </p>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="collapse multi-collapse" id="small-bites-menu">
+                <div class="card card-body">
+                    <h2>Small Bites</h2>
+                    <ul>
+                        <li>Tequeños.</li>
+                        <li>Pasteles.</li>
+                        <li>Arepitas fritas.</li>
+                        <li>Yuca frita.</li>
+                        <li>Pan de jamon. <span class="badge badge-pill badge-success">Christmas Special</span></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="collapse multi-collapse" id="big-bites-menu">
+                <div class="card card-body">
+                    <h2>Big Bites</h2>
+                    <ul>
+                        <li>Arepas.</li>
+                        <ul>
+                            <li>Reina Pepeada.</li>
+                            <li>Catira.</li>
+                            <li>Domino.</li>
+                            <li>Simple.</li>
+                        </ul>
+                        <li>Cachapa con queso.</li>
+                        <li>Pabellon.</li>
+                        <li>Plato Navideño. <span class="badge badge-pill badge-success">Christmas Special</span></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                  <div class="collapse multi-collapse" id="sweet-bites-menu">
+                    <div class="card card-body">
+                        <h2>Sweet Bites</h2>
+                        <ul>
+                            <li>Torta Tres Leches.</li>
+                            <li>Quesillo.</li>
+                            <li>Chicha</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="collapse multi-collapse" id="drinks-menu">
+                <div class="card card-body">
+                    <h2>Drinks</h2>
+                    <ul>
+                        <li>Jugo Natural del dia</li>
+                        <li>Papelon con Limon</li>
+                        <li>Malta</li>
+                        <li>Water</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            
 
         <br>
         <!-- Contact Section -->
@@ -235,6 +326,12 @@
                 </div>
             </div>
         </div>
+
+    <script>
+      $('#small-bites-menu #big-bites-menu #sweet-bites-menu #drinks-menu').collapse({
+    toggle: false
+    })
+    </script>
 
     </body>
 </html>
