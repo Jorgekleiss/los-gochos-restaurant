@@ -21,6 +21,10 @@ body {
 
 }
 
+#logo {
+  height: 50rem;
+}
+
 #logo-image {
   height: 5rem;
   width: 5rem;
