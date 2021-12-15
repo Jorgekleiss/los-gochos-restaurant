@@ -130,7 +130,7 @@ SOme of the issues i found during the testing were.
 
 - HTML Validator [Results](ADD LINKS WHEN AVAILABLE)
 
-- CSS Validator [Results](ADD LINKS WHEN AVAILABLE)
+- CSS Validator [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjorgekleiss.github.io%2Flos-gochos-restaurant%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 #### Known bugs
 
