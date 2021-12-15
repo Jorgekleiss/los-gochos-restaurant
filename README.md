@@ -120,7 +120,12 @@ Image of website of various devices
 Although I like the stage where the site currently is, there are still several details that are not at 100% to how i imagine the to be. 
 The end result meets all of the goals set in the UX and ticks all of the boxes for the tasts needed forthis project. 
 
-SOme of the issues i found during the testing were. 
+Some of the issues I found during the testing were. 
+
+- I wanted to have a modal as a pop up windown once a message was sent on a form, but wanst able to get it set up. 
+- The menu was meant to be on a card style pop up tabs so that you could individually upen each section of the menu separately, but again i wasnt able to get the code right for this. 
+- I managed to get the hamburger menu to be inthe same line as the title, but wasnt able to do the same with the menu on full screen, so it is currently showing on the next line down. 
+
 
 
 -	This Website was tested on Safari, Brave, Google Chrome, Internet Explorer.
@@ -128,7 +133,7 @@ SOme of the issues i found during the testing were.
 -	A lot of testing was done to ensure that all of the links in the pages worked correctly.
 -	Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. 
 
-- HTML Validator [Results](ADD LINKS WHEN AVAILABLE)
+- HTML Validator [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjorgekleiss.github.io%2Flos-gochos-restaurant%2F)
 
 - CSS Validator [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjorgekleiss.github.io%2Flos-gochos-restaurant%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
