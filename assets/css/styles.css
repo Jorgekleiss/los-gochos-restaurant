@@ -168,8 +168,8 @@ a {
 
  #welcome-text {
   color: var(--alice-blue);
-  font-size: 6rem;
-  font-style: var(--header-font);
+  font-size: 8rem;
+  font-family: var(--header-font);
   display: flex;
   justify-content: flex-end;
   padding-right: 3rem;
