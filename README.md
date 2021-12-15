@@ -117,12 +117,16 @@ Image of website of various devices
 
 # Testing
 
-ELABORATE MORE ON MY EXPERIENCE TESTING THE SITE
+Although I like the stage where the site currently is, there are still several details that are not at 100% to how i imagine the to be. 
+The end result meets all of the goals set in the UX and ticks all of the boxes for the tasts needed forthis project. 
+
+SOme of the issues i found during the testing were. 
+
 
 -	This Website was tested on Safari, Brave, Google Chrome, Internet Explorer.
 -	The website was viewed on a variety of devices such as Desktop, Laptop, iPad PRO, iPhone 12 & iPhone12 PRO.
 -	A lot of testing was done to ensure that all of the links in the pages worked correctly.
--	Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. This was done in various countries across different languages. 
+-	Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. 
 
 - HTML Validator [Results](ADD LINKS WHEN AVAILABLE)
 

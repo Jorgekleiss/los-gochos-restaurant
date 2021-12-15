@@ -302,7 +302,6 @@ font-weight: bold;
   align-content: flex-end;
   background-color: var(--ming);
   height: 6.5rem;
-  display: cover
 }
 .social-media-menu {
   display: block;
