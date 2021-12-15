@@ -166,8 +166,14 @@ a {
  
   }
 
-.welcome-section .welcome-text {
-  
+ #welcome-text {
+  color: var(--alice-blue);
+  font-size: 6rem;
+  font-style: var(--header-font);
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3rem;
+  margin-top: -10rem;
   }
 
 /* Deals/ features and experiences container */
@@ -232,6 +238,10 @@ text-decoration: none;
 }
 
 /* Contact Section */
+#contact {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 
 .contact-form {
   color: var(--alice-blue);
@@ -275,18 +285,15 @@ text-decoration: none;
   color: var(--dark-salmon);
 }
 
-.map {
-  background-color: var(--blue-green);
-  width: 100%;
-  padding: 1rem;
-  margin: 1rem;
-  display: cover;
-  
+.text-center {
+  display: flex;
+  justify-content: center;
 }
 
-.map iframe {
-  border: 1px solid #000;
+.bold {
+font-weight: bold;
 }
+
 
 /* footer */
 

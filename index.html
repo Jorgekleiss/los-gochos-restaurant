@@ -46,7 +46,7 @@
 
         <section class="welcome-section">
             <div class="welcome-image"></div>
-            <div class="welcome-text">
+            <div id="welcome-text">
                 <h1>Welcome to a latino Experience.</h1>
             </div>
             
@@ -58,29 +58,29 @@
         <section id="content-section">
             <div class=" container content-container">
                 <div class="row">
-                    <div class="col-12 col-sm-6 info-box" id="deals">
+                    <div class="col-sm-12 col-md-6 info-box" id="deals">
                         <article>
-                            <h3>Plato Navideño (Christmas traditional dish)</h3>
+                            <h3>Plato Navideño (Christmas traditional dish)<span class="badge badge-pill badge-success">LIMITED TIME ONLY!</span></h3>
                             <span>
                                 <img src="assets/images/plato-navideno-venezolano.jpeg" alt="Traditional Venezuelan Christmas meal">
-                                Delitious combination of flavours all fresly prepared in house, consisting in an Hallaca, chicken salad, ham bread, and pork roast.
+                                A very special dish for a very special holiday season. This amazing creation comes with an hallaca (similar to a mexican tamal) stuffed with various meats and vegetables, and cooked for a long time inside of platain leaves. this is serverd with our fantastic ham bread,  chicken salad and pork roast. 
                             </span>
                         </article>
                     </div>
-                    <div class="col-12 col-sm-6 info-box" id="experiences">
+                    <div class="col-sm-12 col-md-6 info-box" id="experiences">
                             <div class="row">
                                 <div class="col-12">
                                     <h2 class="text-uppercase">What our customers have to say about us...</h2>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12 col-md-6">
+                                <div class="col-sm-12 col-md-6">
                                     <blockquote class="blockquote">
                                         <p>Since I left venezuela over 10 years ago, this were the best empanadas i've ever had!.</p>
                                         <footer class="blockquote-footer">Amarilis del Carmen <cite title="Intagram">Intagram</cite></footer>
                                     </blockquote>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-sm-12 col-md-6">
                                     <blockquote class="blockquote">
                                         <p>The food is incredible, the place just has such a fun vibe to be in, and it just feels like once to go through the doors, you are back in Venezuela.</p>
                                         <footer class="blockquote-footer">Jessica M. <cite title="Intagram">Intagram</cite></footer>
@@ -157,7 +157,7 @@
                     <li>Pabellon.</li>
                     <p>Pabellon is the National Venezuelan. composed of white rice, black beans, fried plantain, and shredded beef.</p>
                     <li>Plato Navideño. <span class="badge badge-pill badge-success">Christmas Special</span></li>
-                    <p>A very special dish for a very special holiday season. This amazing creation comes with an hallaca (similar to a mexican tamal) stuffed with various meats and vegetables, and cooked for a long time inside of platain leaves. this is serverd with our fantastic ham bread and a chicken salad. </p>
+                    <p>A very special dish for a very special holiday season. This amazing creation comes with an hallaca (similar to a mexican tamal) stuffed with various meats and vegetables, and cooked for a long time inside of platain leaves. this is serverd with our fantastic ham bread,  chicken salad and pork roast. </p>
                 </ul>
                 <h2>Sweet Bites</h2>
                 <ul>
@@ -183,13 +183,13 @@
         </section>
         </div>    
 
-        <p>
+        <div class="inter-menu">
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#small-bites-menu" aria-expanded="false" aria-controls="small-bites-menu">Small Bites</button>
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#big-bites-menu" aria-expanded="false" aria-controls="big-bites-menu">Big Bites</button>
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#sweet-bites-menu" aria-expanded="false" aria-controls="sweet-bites-menu">Sweet Bites</button>
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#drinks-menu" aria-expanded="false" aria-controls="drinks-menu">Drinks</button>
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="#small-bites-menu #big-bites-menu #sweet-bites-menu #drinks-menu">Open all Menu</button>
-          </p>
+        </div>
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-3">
               <div class="collapse multi-collapse" id="small-bites-menu">
@@ -258,46 +258,76 @@
         <!-- Contact Section -->
 
         <section id="contact">
-            <div class="container contact-container">
-                <p>phone number, opening times</p>
-               
+            <h1 class="text-center">Contact</h2>
+            <div class="contact-container"></div>
                 <div class="row">
-                    <div class="col-sm-12 col-lg-6">
-                        <div class="contact-form">
-                            <form method=""  action="">
-                                <h1>Contact Los Gochos Restaurant</h1>
-                        
-                                <labelfor="fullname">Full Name</label>
-                                <input class="text-input" id="fullname" type="text" name="full_name" placeholder="Your first and last Name" required>
-                            
-                                <labelfor="email">Email Address</label>
-                                <input class="text-input" id="email" type="email" name="email_address" placeholder="Your email address" required>
-                                    
-                                <labelfor="email">Subject</label>
-                                <input class="text-input" id="subject" type="text" name="message-subject" placeholder="Brief description of your message" required>
-
-                                <labelfor="email">Message</label>
-                                <input class="text-input" id="content" type="text" name="message-contect" placeholder="Let it all out and give us as much detail as you can about your querry or feedback" rows="5" required>
-                                    
-                                <label for="both">Sign me up for your Newsletter</label>
-                                <input type="checkbox" id="newsletter" name="newsletter-signup" value="yes">
-                                    
-                                <input class="submit-button" type="submit" value="Submit" data-toggle="modal" data-target="#contact-los-gochos">
-                            </form>
+                    <div class="col-sm-12 col-md-4">
+                        <h2 class="text-center">Open times:</h3>
+                        <table class="text-center">
+                        <tr>
+                            <th></th>
+                            <th><h2>Open Between:</h2></th>
+                            <th></th>	
+                        </tr>
+                        <tr>
+                            <td>Wed - Fri</td>
+                            <td>11:00</td>
+                            <td>20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Weekend</td>
+                            <td>9:00</td>
+                            <td>20:00</td>
+                        </tr>	
+                        </table>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <h2>Contact info:</h2>
+                        <div>
+                        <span class="bold">Phone: </span>
+                        <span>01122 334455</span>
+                        </div>
+                        <div>
+                        <span class="bold">Email: </span>
+                        <span>contact@losgochos.food</span>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-6">
-                         <div class="map">
-                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387.75148741448925!2d-3.394097862271737!3d51.9480688984712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e33143dfdf885%3A0xa37e541e69a7fe81!2sThe%20Promenade!5e0!3m2!1sen!2suk!4v1638680463565!5m2!1sen!2suk"  allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                      </div>
-                </div>    
+                    <div class="col-sm-12 col-md-4">
+                        <h2>Address:</h2>
+                        <p>Los Gochos Restaurant,<br>The Promenade,<br>Brecon</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form method=""  action="">
+                        <h1>Contact Los Gochos Restaurant</h1>
+                
+                        <labelfor="fullname">Full Name</label>
+                        <input class="text-input" id="fullname" type="text" name="full_name" placeholder="Your first and last Name" required>
+                    
+                        <labelfor="email">Email Address</label>
+                        <input class="text-input" id="email" type="email" name="email_address" placeholder="Your email address" required>
+                            
+                        <labelfor="email">Subject</label>
+                        <input class="text-input" id="subject" type="text" name="message-subject" placeholder="Brief description of your message" required>
+
+                        <labelfor="email">Message</label>
+                        <input class="text-input" id="content" type="text" name="message-contect" placeholder="Let it all out and give us as much detail as you can about your querry or feedback" rows="5" required>
+                            
+                        <label for="both">Sign me up for your Newsletter</label>
+                        <input type="checkbox" id="newsletter" name="newsletter-signup" value="yes">
+                            
+                        <input class="submit-button" type="submit" value="Submit" data-toggle="modal" data-target="#contact-los-gochos">
+                    </form>
+                </div>
+                  <div>
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387.75148741448925!2d-3.394097862271737!3d51.9480688984712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e33143dfdf885%3A0xa37e541e69a7fe81!2sThe%20Promenade!5e0!3m2!1sen!2suk!4v1638680463565!5m2!1sen!2suk" width="100%" height="300"></iframe>
+                  </div>  
             </div>
         </section>
 
         <!-- Footer -->
         
-        <footer class="footer-container">
+        <footer class="footer-container container-fluid">
                 <div class="social-media-menu">
                     <a href="https://www.facebook.com" target="_blank"  class="social-media-item"><i class="fab fa-facebook-square" alt="Link to our Facebook Page"></i></a>
                     <a href="https://www.Instagram.com" target="_blank"  class="social-media-item"><i class="fab fa-instagram" alt="Link to our Instagram Page"></i></a>
