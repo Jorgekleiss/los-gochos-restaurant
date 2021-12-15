@@ -222,7 +222,7 @@ text-decoration: none;
   padding-left: 5rem;
 }
 
-.gallery-img {
+.col-sm-12 img {
   opacity: 0.7;
   cursor: pointer;
   margin: 2rem;
@@ -231,10 +231,14 @@ text-decoration: none;
   border-radius: 1px;
 }
 
-.gallery-img:hover {
+.col-sm-12 img:hover {
   opacity: 1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: scale(2);
+}
+
+#plato-navi {
+  width: auto;
 }
 
 /* Contact Section */
@@ -387,7 +391,7 @@ transform: rotate(360deg);
 }
 .header .navbar {
   clear: none;
-  display: inline-flex;
+  display: flex;
   justify-content: flex-end;
   max-height: none;
 }
