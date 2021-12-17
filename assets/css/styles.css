@@ -80,6 +80,7 @@ border-right: 1px solid var(--alice-blue);
   clear: both;
   max-height: 0;
   transition: max-height .3s ease-out;
+  z-index: 3;
 }
 
 /* menu icon */
@@ -167,7 +168,7 @@ border-right: 1px solid var(--alice-blue);
 
  #welcome-text {
   color: var(--alice-blue);
-  font-size: 25rem;
+  font-size: 5rem;
   font-weight: bold;
   font-family: var(--header-font);
   display: flex;
@@ -208,8 +209,12 @@ border-right: 1px solid var(--alice-blue);
 /* Menu Section */
 
 .menu-container li{
-text-decoration: none;
+list-style-type: none;
 font-weight: bold;
+}
+
+.menu-container li p {
+  font-weight: normal;
 }
 
 
@@ -283,7 +288,7 @@ font-weight: bold;
   color: var(--dark-salmon);
 }
 
-.text-center {
+.text-centre {
   display: flex;
   justify-content: center;
 }
@@ -389,7 +394,7 @@ transform: rotate(360deg);
 }
 .header .navbar {
   clear: none;
-  display: flex;
+  display: inline-flex;
   justify-content: flex-end;
   max-height: none;
 }
