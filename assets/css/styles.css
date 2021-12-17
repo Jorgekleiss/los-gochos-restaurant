@@ -28,7 +28,7 @@ body {
 
 .title {
   font-family: var(--header-font);
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 
 /* header */
@@ -41,6 +41,7 @@ a {
   background-color: var(--ming);
   position: fixed;
   width: 100%;
+  z-index: 3;
 }
 
 .header ul {
@@ -168,13 +169,13 @@ border-right: 1px solid var(--alice-blue);
 
  #welcome-text {
   color: var(--alice-blue);
-  font-size: 5rem;
   font-weight: bold;
   font-family: var(--header-font);
   display: flex;
   justify-content: flex-end;
+  font-size: 5rem;
   padding-right: 3rem;
-  margin-top: -10rem;
+  margin-top: -25rem;
   }
 
 /* Deals/ features and experiences container */
@@ -238,6 +239,7 @@ font-weight: bold;
   opacity: 1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: scale(2);
+  z-index: 2;
 }
 
 /* Contact Section */
@@ -352,21 +354,31 @@ transform: rotate(360deg);
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
+#logo {
+    display: none;;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  .col-sm-12 img:hover {
+  #gallery-section .col-sm-12 img:hover {
     opacity: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: none;
+  }
+
+  .title {
+    font-size: 4.5rem;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+  #welcome-text {
+
+    margin-top: -10rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -395,6 +407,7 @@ transform: rotate(360deg);
 .header .navbar {
   clear: none;
   display: inline-flex;
+  display: flex;
   justify-content: flex-end;
   max-height: none;
 }
