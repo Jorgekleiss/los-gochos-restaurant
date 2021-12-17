@@ -22,20 +22,14 @@ body {
 }
 
 #logo {
-  height: 50rem;
+  height: 5rem;
 }
 
-#logo-image {
-  height: 5rem;
-  width: 5rem;
-  margin: 0;
-}
 
 .title {
   font-family: var(--header-font);
   font-size: 4.5rem;
 }
-
 
 /* header */
 
@@ -47,7 +41,6 @@ a {
   background-color: var(--ming);
   position: fixed;
   width: 100%;
-  z-index: 3;
 }
 
 .header ul {
@@ -59,10 +52,13 @@ a {
 }
 
 .header li a {
-  display: block;
+  display: inline-flex;
   padding: 2rem 2rem;
-  border-right: 1px solid var(--alice-blue);
   text-decoration: none;
+}
+
+.border-right {
+border-right: 1px solid var(--alice-blue);
 }
 
 .header li a:hover,
@@ -76,7 +72,6 @@ a {
   font-size: 1rem;
   padding: 1rem 2rem;
   text-decoration: none;
-  width: 90%;
 }
 
 /* menu */
@@ -196,8 +191,6 @@ a {
 
 .info-box {
   background-color: var(--dark-salmon);
-  height: auto;
-  width: auto;
   margin: 1rem .5rem 1rem .5rem;
   border-radius: 4px
 }
@@ -302,6 +295,10 @@ text-decoration: none;
 font-weight: bold;
 }
 
+#map {
+  width:100%;
+  height:30rem;
+}
 
 /* footer */
 
