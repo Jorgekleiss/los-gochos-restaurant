@@ -1,5 +1,7 @@
 # Los Gochos Restaurant
 
+ ![Responsive Screenshot](wireframes/responsive.png)
+
 [Link to live page](https://jorgekleiss.github.io/los-gochos-restaurant/)
 
 Los Gochos Restaurant is a small family owned restaurant, owned and ran by a Venezuelan couple from Merida-Venezuela. We pride in having a fun and enjoyable environment when people can meet up for great food, a few drinks or just a place to relax with friend and enjoy Latino America music. 
@@ -133,9 +135,9 @@ Some of the issues I found during the testing were.
 -	A lot of testing was done to ensure that all of the links in the pages worked correctly.
 -	Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. 
 
-- HTML Validator [Results](https://validator.w3.org/nu/#textarea)
+- HTML Validator [Results](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fjorgekleiss.github.io%2Flos-gochos-restaurant)
 
-- CSS Validator [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjorgekleiss.github.io%2Flos-gochos-restaurant%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- CSS Validator [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjorgekleiss.github.io%2Flos-gochos-restaurant&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#warnings)
 
 #### Known bugs
 
