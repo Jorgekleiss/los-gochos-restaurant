@@ -133,7 +133,7 @@ Some of the issues I found during the testing were.
 -	A lot of testing was done to ensure that all of the links in the pages worked correctly.
 -	Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. 
 
-- HTML Validator [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjorgekleiss.github.io%2Flos-gochos-restaurant%2F)
+- HTML Validator [Results](https://validator.w3.org/nu/#textarea)
 
 - CSS Validator [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjorgekleiss.github.io%2Flos-gochos-restaurant%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
